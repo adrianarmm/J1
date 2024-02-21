@@ -9,3 +9,9 @@ public class CronometroCosmico {
         this.diasEnLaTierra = diasEnLaTierra;
         this.diasEnElNuevoPlaneta = diasEnElNuevoPlaneta;
     }
+
+    public long convertirATiempoTerrestre() {
+        double segundos = diasEnLaTierra * 86400;
+        return Math.round(segundos);
+    }
+
