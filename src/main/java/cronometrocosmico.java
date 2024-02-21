@@ -39,3 +39,11 @@ public class CronometroCosmico {
         double años = dias / 365;
         return "Tiempo en el nuevo planeta: " + (int) segundos + " segundos, " + (int) minutos + " minutos, " + (int) horas + " horas, " + (int) dias + " días, " + (int) años + " años";
     }
+
+
+    public String identificarLimitesDeRepresentacion() {
+        long maximoSegundos = Long.MAX_VALUE;
+        long maximoMinutos = maximoSegundos / 60;
+        long maximoHoras = maximoMinutos / 60;
+        long maximoDias = maximoHoras / 24;
+        long maximoAños = maximoDias / 365;
