@@ -57,4 +57,5 @@ public class CronometroCosmico {
 
         return "Máximo tiempo representable en la Tierra: " + maximoSegundos + " segundos, " + maximoMinutos + " minutos, " + maximoHoras + " horas, " + maximoDias + " días, " + maximoAños + " años" +
                 "\nMáximo tiempo representable en el nuevo planeta: " + maximoSegundosEnNuevoPlaneta + " segundos, " + maximoMinutosEnNuevoPlaneta + " minutos, " + maximoHorasEnNuevoPlaneta + " horas, " + maximoDiasEnNuevoPlaneta + " días, " + maximoAñosEnNuevoPlaneta + " años";
-    }
+        }
+}
