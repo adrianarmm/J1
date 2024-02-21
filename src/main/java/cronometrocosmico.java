@@ -19,3 +19,13 @@ public class CronometroCosmico {
         double segundos = diasEnLaTierra * (86400 / diasEnElNuevoPlaneta);
         return Math.round(segundos);
     }
+
+
+    public String visualizarTiempoTerrestre() {
+        double segundos = diasEnLaTierra * 86400;
+        double minutos = segundos / 60;
+        double horas = minutos / 60;
+        double dias = horas / 24;
+        double años = dias / 365;
+        return "Tiempo en la Tierra: " + (int) segundos + " segundos, " + (int) minutos + " minutos, " + (int) horas + " horas, " + (int) dias + " días, " + (int) años + " años";
+    }
