@@ -47,3 +47,10 @@ public class CronometroCosmico {
         long maximoHoras = maximoMinutos / 60;
         long maximoDias = maximoHoras / 24;
         long maximoAños = maximoDias / 365;
+
+
+        long maximoSegundosEnNuevoPlaneta = (long) (maximoSegundos * (86400 / diasEnElNuevoPlaneta));
+        long maximoMinutosEnNuevoPlaneta = maximoSegundosEnNuevoPlaneta / 60;
+        long maximoHorasEnNuevoPlaneta = maximoMinutosEnNuevoPlaneta / 60;
+        long maximoDiasEnNuevoPlaneta = maximoHorasEnNuevoPlaneta / 24;
+        long maximoAñosEnNuevoPlaneta = maximoDiasEnNuevoPlaneta / 365;
