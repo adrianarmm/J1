@@ -29,3 +29,13 @@ public class CronometroCosmico {
         double años = dias / 365;
         return "Tiempo en la Tierra: " + (int) segundos + " segundos, " + (int) minutos + " minutos, " + (int) horas + " horas, " + (int) dias + " días, " + (int) años + " años";
     }
+
+
+    public String visualizarTiempoNuevoPlaneta() {
+        double segundos = diasEnLaTierra * (86400 / diasEnElNuevoPlaneta);
+        double minutos = segundos / 60;
+        double horas = minutos / 60;
+        double dias = horas / 24;
+        double años = dias / 365;
+        return "Tiempo en el nuevo planeta: " + (int) segundos + " segundos, " + (int) minutos + " minutos, " + (int) horas + " horas, " + (int) dias + " días, " + (int) años + " años";
+    }
