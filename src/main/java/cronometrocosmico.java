@@ -15,3 +15,7 @@ public class CronometroCosmico {
         return Math.round(segundos);
     }
 
+    public long convertirANuevoPlaneta() {
+        double segundos = diasEnLaTierra * (86400 / diasEnElNuevoPlaneta);
+        return Math.round(segundos);
+    }
